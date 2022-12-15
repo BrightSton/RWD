@@ -1,3 +1,9 @@
+/* CSS 변수 */
+/* 하수
+    h1{background: var(--dark-brown) */
+/* 고수
+    h1{background: var(--primary-color)
+      이렇게 theme 안에서 color 변동을 주어 쉽게 수정*/
 :root {
   --white: #fff;
   --black: #000;
