@@ -73,4 +73,13 @@ div[class*="group"] {
   div[class*="group"] {
     width: 25%;
   }
+
+  div.group2 {
+    order: 1;
+  }
+
+  div.group1,
+  div.group12 {
+    width: 75%;
+  }
 }
