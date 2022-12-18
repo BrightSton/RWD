@@ -38,7 +38,8 @@
 input[type="search"] {
   -webkit-appearance: none;
   appearance: none;
-}
+} /* safari에서 모바일 환경으로 검색폼을 보면 완전 라운딩해서 보이므로
+이 코드를 넣어주어 공통된 검색 폼이 보이도록 설정.*/
 
 .searchForm__group {
   display: flex;
