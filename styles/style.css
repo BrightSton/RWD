@@ -103,22 +103,27 @@ input[type="search"] {
 /* 공통 추천 서적 */
 .book {
   background-color: lightgreen;
+  grid-area: book;
 }
 /* 공통 새소식 */
 .news {
   background-color: yellow;
+  grid-area: news;
 }
 /* 공통 게시판 */
 .board {
   background-color: lightsalmon;
+  grid-area: board;
 }
 /* 공통 인기 사이트 */
 .favorite {
   background-color: skyblue;
+  grid-area: favorite;
 }
 /* 공통 추천 트위터 */
 .twitter {
   background-color: burlywood;
+  grid-area: twitter;
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -273,8 +278,17 @@ input[type="search"] {
 
   /* 모바일 메인 컨텐츠 */
   .appMain {
-    grid-template-columns: 1fr;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    grid-template-areas:
+      "news news news news news news news news news news news news"
+      "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+      "book book book book . board board board board board board board";
+    gap: var(--spacing-base);
   }
 }
 
@@ -341,8 +355,6 @@ input[type="search"] {
     grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
-  }
-  .news {
   }
 }
 
