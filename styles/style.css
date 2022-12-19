@@ -349,6 +349,7 @@ input[type="search"] {
     margin-right: auto;
     border: 5px solid red;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     grid-template-areas:
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
