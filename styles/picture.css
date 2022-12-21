@@ -1,0 +1,8 @@
+.svg1 path {
+  transition: all 1000ms;
+}
+
+.svg1 path:hover,
+.svg1 path:focus {
+  fill: blue;
+}
